@@ -6,8 +6,6 @@ psql -c "alter user postgres with password 'postgres_admin'"
 psql -c "CREATE USER bucardo WITH LOGIN SUPERUSER ENCRYPTED PASSWORD 'bucardo_admin';" 
 psql -c "CREATE DATABASE bucardo OWNER bucardo;"
 
-exit
-
 # Install Bucardo on the EC2 instance
 curl https://bucardo.org/downloads/Bucardo-5.6.0.tar.gz -o Bucardo-5.6.0.tar.gz && \
 tar -xvf Bucardo-5.6.0.tar.gz && \
